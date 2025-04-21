@@ -1,6 +1,22 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Lab 5: Data Types and Variables
+// Author: Isabelle Lin <ilin14@ucsc.edu>
+// Date: April 21, 2025 
+
+// Define Variables
+make = "Lexus";
+model = "RX400h";
+color = "white";
+year = 2006; 
+
+//calculate 
+age = 2025 - year; 
+
+//output
+document.writeln("Make: " + make + "<br>"); 
+document.writeln("Model: " + model + "<br>");
+document.writeln("Color: " + color + "<br>");
+document.writeln("Year: " + year + "<br>");
+document.writeln("Age: " + age + "years<br>");
 
 // Constants
 
