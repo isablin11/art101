@@ -4,6 +4,14 @@
 .minor-section {
     padding: 10px;
     margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
+    border: solid 1px #433f74;
+    background-color: #eec6e7;
+  }
+
+  .own-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #5f3f21;
+    background-color: #b44f4f;
+    font-family: fantasy;
   }
