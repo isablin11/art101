@@ -18,7 +18,7 @@
 
   .special {
     background-color: lavender;
-    border: dotted 50px rgb(99, 22, 22);
+    border: dotted 20px rgb(99, 22, 22);
     color: rgb(54, 60, 145);
     font-weight: bold;
 }
