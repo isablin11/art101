@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 10 - JavaScript for the Web</title>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/lab.js" defer></script>
+</head>
+
+	<main id="content">
+		<section>
+			<h1>Lab 10 - JavaScript for the Web</h1>
+			<div id="challenge" class="minor-section">
+					<h2>Challenge</h2>
+					<p>The challenge of this lab was to experiment with DOM manipulation. With the main goal of this
+                        lab being to create a button that, when clicked, generated random "conversation". In this case
+                        We used a little bit of the "Lorem Ipsum" paragraph to generate the random conversation.</p>
+			</div>
+
+			<div id="problems" class="minor-section">
+					<h2>Problems</h2>
+					<p>One of the problems we ran into with this lab was getting the button to actually
+                        work when clicked. In the beginning, we fund that when clicking it, nothing happened.
+                        Thats when we found out that we hadn't actually put our event lister callback and output appendage
+                        INSIDE the clicker button function. In the instructions for the lab it looks like the function just ends,
+                        but steps 4 and 5 actually needed to be put inside the function made in step 3.</p>
+			</div>
+
+			<div id="reflection" class="minor-section">
+					<h2>Reflection</h2>
+					<p>We are ahppy with how this lab turned out. While we ran into a little hiccup with getting the button to
+                        work, we managed to figure it out in the end by placing the right things inside the clicker function.
+                        We were also able to do one half of Task X, we found that the user input section was a bit too complicated.
+                        However, we were able to make the text generate side to side like a real text conversation. We even styled
+                        the text too!</p>
+			</div>
+
+			<div id="results" class="minor-section">
+					<h2>Results</h2>
+					<p></p>
+					
+					<div id="output"></div>
+						<button id="make-convo">Say Something</button>
+
+			</div>
+
+	</main>
+</body>
+</html>

@@ -1,0 +1,40 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #433f74;
+    background-color: #eec6e7;
+  }
+
+/* General message layout */
+#output {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Individual messages */
+.text p {
+  max-width: 60%;
+  margin-bottom: 10px;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-family: sans-serif;
+  font-size: 0.8em;
+  word-wrap: break-word;
+}
+
+/* Alternate left/right alignment */
+.text:nth-child(odd) {
+  align-self: flex-start;
+  background-color: rgb(238, 212, 236);
+  color: rgb(48, 41, 92);
+}
+
+.text:nth-child(even) {
+  align-self: flex-end;
+  background-color: rgb(182, 216, 242);
+  color: rgb(0, 0, 0);
+}
