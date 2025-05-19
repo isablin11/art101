@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 12 - Conditionals</title>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/lab.js" defer></script>
+</head>
+
+	<main id="content">
+		<section>
+			<h1>Lab 12 - Conditionals</h1>
+			<div id="challenge" class="minor-section">
+					<h2>Challenge</h2>
+					<p>The challenge of this lab was to create a function that depended on conditionals.
+                        In this case we added an input field that would take someone's name and sort them
+                        into a certain bending type from Avatar: The Last Airbender.</p>
+			</div>
+
+			<div id="problems" class="minor-section">
+					<h2>Problems</h2>
+					<p>One of the problems we ran into for this lab was getting the function to actually run
+                        and output the house information after a user input their name. We came to find that
+                        clicking submit did not do anything. As such, we debugged our code from there and found
+                        that the sortingHat function had not been called correctly in our click handler for the
+                        submit button. So we made sure to "let house = sortingHat" in order to correctly output
+                        the house information.</p>
+			</div>
+
+			<div id="reflection" class="minor-section">
+					<h2>Reflection</h2>
+					<p>Overall we are pleased with how this lab went. We had a lot of fun trying to decide
+                        what houses/fandom we were going to use for sorting user inputs. We even added a short
+                        description of each bending style after users are sorted. We ran into a few minor problems
+                        but we were able to work through them all by looking at previous labs and our class notes.
+                        We even included a font change to the output from within the JavaScript to make the text
+                        stand out.</p>
+			</div>
+
+			<div id="results" class="minor-section">
+					<h2>Results</h2>
+					<p></p>
+					
+						<h2>What element do you wield?</h2>
+						<p>Please enter your FULL name for sorting:</p> 
+						<input  type="text" id="input" placeholder="Name Here">
+						<button id="button">Submit</button>	
+						<div id="output"></div>
+		
+
+			</div>
+
+	</main>
+</body>
+</html>
+
