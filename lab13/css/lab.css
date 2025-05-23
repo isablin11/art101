@@ -1,0 +1,24 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #433f74;
+    background-color: #eec6e7;
+  }
+
+/* General message layout */
+#output {
+  display: flex;
+  flex-direction: column;
+  width: 110%;
+}
+
+.own-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #5f3f21;
+    background-color: #b44f4f;
+    font-family: fantasy;
+  }
