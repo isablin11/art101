@@ -1,35 +1,41 @@
 // index.js - Lab 8: Anon Functions and Callbacks
 // Author: Isabelle Lin <ilin14@ucsc.edu>
-// Date: May 1, 2025 
+// Date: May 28, 2025 
 
-// code from console
-function numbers(x) { 
-  return (x + 2 == 3);
+// Code from console 
+function numbers(x) {
+    return (x + 2 == 3);
 }
 
-// collect all output 
-let output = "";
+// Array operations
+const array = [1, 2, 3, 4, 5, 6, 7];
 
-//test function 
-console.log("does 3 plus 2 equal 3? ", numbers(3));
-console.log("does 1 plus 2 equal 3? ", numbers(1)); 
+// Test function
+const test1 = numbers(3); // false
+const test2 = numbers(1); // true
 
-array = [1, 2, 3, 4, 5, 6, 7]
-console.log("My array", array); 
+// Mapping
+const additionResults = array.map(numbers);
+const subtractResults = array.map(x => x - 0.5);
 
-var result = array.map(numbers); 
-console.log("Test of addition of array: ", result); 
-
-var result = array.map(function(x){
-  return x - 0.5;
-})
-
-console.log("array minus 0.5: ", result);
-
-// Your map results data
-var mapResults = "Your map results here";
+// HTML output
+let outputHTML = `
+    <h3>Function Tests:</h3>
+    <p>Does 3 plus 2 equal 3? ${test1}</p>
+    <p>Does 1 plus 2 equal 3? ${test2}</p>
+    
+    <h3>Array Operations:</h3>
+    <p>Original array: [${array.join(', ')}]</p>
+    
+    <h4>Addition Test Results:</h4>
+    <p>[${additionResults.join(', ')}]</p>
+    
+    <h4>Subtraction Results (x - 0.5):</h4>
+    <p>[${subtractResults.join(', ')}]</p>
+`;
 
 // Use jQuery to select the element by its ID and set the HTML content
-$(document).ready(function() { 
-  $("#output").html(mapResults);
+$(document).ready(function() {
+    $("#output").html(outputHTML);
+    
 });
