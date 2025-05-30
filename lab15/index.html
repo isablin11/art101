@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab 15 - AJAX</title>
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	<script src="js/jquery-3.7.1.min.js"></script>
+	<script src="js/lab.js" defer></script>
+</head>
+
+	<main id="content">
+		<section>
+			<h1>Lab 15 - AJAX</h1>
+			<div id="challenge" class="minor-section">
+					<h2>Challenge</h2>
+					<p>The challenge of this lab was to experiment with jQuery and Ajax. More
+                        specifically we had to take an existing API and display some data stored within.
+                        For this lab we decided to use the Pokemon API!</p>
+			</div>
+
+			<div id="problems" class="minor-section">
+					<h2>Problems</h2>
+					<p>One of the problems we ran into was being unsure of how we should display the data. The raw
+                        data was easy enough to display with the given instructions from the assignment. But we wanted
+                        our page to be more concise and presentable. So we had to find a way to display only specific
+                        information for each pokemon rather than the entirety of the raw data. Thankfully we were able to
+                        do this by only grabbing specific parts of the stored data with things like "data.name", "data.height",
+                        "data.weight", and "data.abilities" as well as grabbing the specific pokemon sprite from the data.</p>
+			</div>
+
+			<div id="reflection" class="minor-section">
+					<h2>Reflection</h2>
+					<p>We are honestly really proud of how we did with this lab. As we weren't satisfied with displaying the
+                        raw data as it was. We wanted to style it and make it look nice, so we picked out the specific data that
+                        we wanted to display for each pokemon and even styled the pop-up in CSS to make it look pretty. We even
+                        went as far as to add our favorite pokemon, Isabelle's being Eevee and mine being Blastoise. We also added
+                        a button that would generate random pokemon data from the API for fun!</p>
+			</div>
+
+			<div id="results" class="minor-section">
+					<h2>Results</h2>
+					<p></p>
+					     <h1>Pokémon Information:</h1>
+                <div class="button-container">
+                    <button id="fetch-blastoise">Get Blastoise</button>
+                    <button id="fetch-eevee">Get Eevee</button> <!-- Renamed to eevee -->
+                    <button id="fetch-random">Get Random Pokémon</button>
+                    </div>
+                    <div id = "output"></div>
+					</div>
+	</main>
+</body>
+</html>
+
