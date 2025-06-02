@@ -1,0 +1,93 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #433f74;
+    background-color: #eec6e7;
+  }
+
+/* General message layout */
+#output {
+  display: flex;
+  flex-direction: column;
+  width: 110%;
+}
+
+.own-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #5f3f21;
+    background-color: #b44f4f;
+    font-family: fantasy;
+  }
+
+.pokemon-card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    max-width: 400px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.pokemon-image {
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+}
+.pokemon-name {
+    text-align: center;
+    font-size: 24px;
+    text-transform: capitalize;
+    color: #333;
+    margin: 10px 0;
+}
+.pokemon-details {
+  margin-top: 15px;
+}
+.detail-item {
+    margin-bottom: 8px;
+}
+.abilities-list {
+    list-style-type: none;
+    padding: 0;
+}
+.ability {
+    display: inline-block;
+    background-color: #e0e0e0;
+    padding: 3px 8px;
+    border-radius: 15px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+}
+.stats-container {
+    margin-top: 15px;
+}
+.stat-item {
+    margin-bottom: 5px;
+}
+.stat-name {
+    display: inline-block;
+    width: 100px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.buttons-container {
+    display: flex;      /* Aligns buttons horizontally */
+    gap: 10px;         /* Adds space between buttons */
+    margin-bottom: 20px;
+}
+
+/*Style buttons */
+#fetch-blastoise, #fetch-eevee, #fetch-random {
+    padding: 10px 15px;
+    background-color: #4d7557; /* Pokémon yellow */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
